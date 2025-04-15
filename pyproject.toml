@@ -41,7 +41,7 @@ addopts = '-p no:warnings'
 
 [tool.taskipy.tasks]
 # lint = 'ruff check'
-lint = 'ruff check && ruff --diff'
+lint = 'ruff check'
 pre_format = 'ruff check --fix '
 format = 'ruff check --fix && ruff format'
 run = 'fastapi dev fast_zero/app.py'
